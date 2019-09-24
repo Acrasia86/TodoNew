@@ -17,9 +17,20 @@ namespace TodoNew.Domain
             DueDate = dueDate;
         }
 
-        public string Title { get; set; }
-        public DateTime DueDate { get; set; }
-
         
+        public DateTime? DueDate { get; set; }
+        public DateTime? Completed { get; set; }
+        public string Title { get; set; }
+        public bool IsCompleted
+        {
+            get
+            {
+
+            return Completed != null;
+ 
+            }
+        }
+        
+
     }
 }

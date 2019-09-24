@@ -39,6 +39,15 @@ namespace TodoNew
 
 
                     case 2:
+
+                        foreach (var todos in tasks)
+                        {
+                            if(todos != null)
+                            {
+                                Console.WriteLine($"{todos.Title} {todos.DueDate}");
+                            }
+                        }
+                        Console.ReadLine();
                         
                         break;
                     case 3:
